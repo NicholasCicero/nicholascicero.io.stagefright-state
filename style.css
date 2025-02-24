@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
 :root {
     --off-white-color: #fff5ee;
-    --accent-color: #151515;
+    --accent-color-1: #151515;
+    --accent-color-2: #303030;
     --primary-color-1: #a24857;
     --primary-color-2: #2e5a88;
-    --secondary-color-1: #ff69b4;
-    --secondary-color-2: #ffb469;
+    --orange: #ffb469;
+    --pink: #ff69b4;
+    --off-pink: #bf4b89;
 }
 
 /* CSS Reset */
@@ -69,7 +72,12 @@ section {
 }
 
 /* Typography */
+h1 {
+    font: 500 54px/1.5 'Josefin Sans';
+}
+
 h2 {
+    font: 500 42px/1.5 "Josefin Sans";
     text-align: center;
 }
 
@@ -85,6 +93,22 @@ a {
     color: var(--off-white-color);
 }
 
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: var(--pink);
+    color: var(--off-white-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--off-pink);
+}
+
 /* media */
 img {
     display: inherit;
@@ -92,21 +116,26 @@ img {
 
 /* Classes */
 .header {
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-1);
     overflow: hidden;
     display: flex;
     width: 100%;
+    height: 12vh;
     justify-content: space-between;
 }
 
+.logo-link {
     display: flex;
     padding: 0.5rem 2rem 0.5rem 2rem;
     margin: 5px;
 }
 
+.logo-image {
+    width: 20rem;
     scale: clamp(0.8, 1, 1.2)
 }
 
+.logo-link:hover {
     scale: 1.05;
     transition: scale 1.2s;
 }
@@ -123,7 +152,7 @@ img {
 }
 
 .header .navbar .nav-button {
-    font-weight: 400;
+    font: 500 24px/28px "Noto Sans";
     padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
@@ -132,15 +161,31 @@ img {
     transition: scale 0.5s;
 }
 
-.footer {
-    background-color: #212121;
-    height: 40vh;
-    width: 100%;
-}
-
 .hero {
     background-color: var(--primary-color-2);
-    height: 100vh;
+    height: 130vh;
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-header {
+    color: var(--off-white-color);
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.hero-subtitle {
+    color: var(--off-white-color);
+    text-align: center;
+    font: 500 28px/14px "Noto Sans";
+    padding: 2rem;
+    transform: translateY(5rem);
 }
 
 .store {
@@ -148,16 +193,91 @@ img {
 }
 
 .band-info {
-    background-color: var(--primary-color-1);
+    background-color: var(--accent-color-2);
+    color: var(--off-white-color);
     height: 80vh;
     display: flex;
+    padding-top: 10rem;
+    justify-content: space-between;
 }
 
-.music {
+.about {
+    margin-left: 15%;
+}
+
+.tour-dates {
+    margin-right: 15%;
+}
+
+.link-button {
+    background: var(--pink);
+    display: block;
+    text-align: center;
+    justify-self: center;
+    width: 8rem;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.link-button:hover {
+    background: var(--off-pink) ;
+}
+
+.contact-form {
+    font: 500 18px/26px "Noto Sans";
+    background-color: var(--off-white-color);
+    color: var(--off-white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-.contact {
-    background-color: var(--primary-color-1);
-    height: 70vh;
+.form-container {
+    background: var(--accent-color-1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: var(--accent-color-2);
+    color: var(--off-white-color);
+    display: block;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+}
+
+@media (max-width: 480px) {
+    body {
+        height: auto;
+    }
+    .form-container {
+        padding: 15px;
+    }
+    input, textarea, button {
+        font-size: 14px;
+        padding: 6px;
+    }
 }
