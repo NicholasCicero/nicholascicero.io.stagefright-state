@@ -206,13 +206,17 @@ img {
 }
 
 .store {
-    height: 120vh;
+    height: 90vh;
+}
+
+.store h2 {
+    padding-top: 2rem;
 }
 
 .band-info {
     background-color: var(--accent-color-2);
     color: var(--off-white-color);
-    height: 80vh;
+    height: 60vh;
     display: flex;
     padding-top: 10rem;
     justify-content: space-between;
@@ -350,44 +354,6 @@ textarea {
     padding-top: 5rem;
 }
 
-.carousel {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.carousel-images {
-    display: flex;
-    width: 300%;
-    transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-    width: 600px;
-    height: 445px;
-}
-
-.buttons {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
-}
-
-.buttons button {
-    background-color: var(--accent-color-1);
-    color: var(--off-white-color);
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-}
-
 /* Tour Dates Section */
 .tour-dates {
     padding: 40px 20px;
@@ -398,7 +364,11 @@ textarea {
 .tour-dates h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #212121;
+    color: var(--accent-color-1);
+}
+
+.tour-dates h3 {
+    font-family: "Noto Sans", sans-serif;
 }
 
 .tour-list {
@@ -415,6 +385,10 @@ textarea {
     width: 80%;
     max-width: 500px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tour-date .link-button {
+    background: var(--accent-color-2);
 }
 
 .tour-date h3 {
@@ -442,8 +416,6 @@ textarea {
     color: var(--accent-color-1);
     animation: fadeIn 2s;
 }
-
-
 
 .main-started p {
     font-size: 20px;
@@ -516,4 +488,31 @@ footer img {
 
 .about-section {
     padding: 2rem 3rem 2rem 3rem;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+    padding: 20px;
+    background: var(--accent-color-1);
+    border-radius: 10px;
+    margin: 2rem 5rem;
+}
+.gallery img {
+    width: 420px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+.gallery img:hover {
+    transform: scale(1.1);
 }
