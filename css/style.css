@@ -217,17 +217,9 @@ img {
     background-color: var(--accent-color-2);
     color: var(--off-white-color);
     height: 60vh;
+    padding: 6rem;
     display: flex;
-    padding-top: 10rem;
-    justify-content: space-between;
-}
-
-.about-info {
-    margin-left: 15%;
-}
-
-.tour-dates-info {
-    margin-right: 15%;
+    justify-content: center;
 }
 
 .about-info h2, .tour-dates-info h2 {
