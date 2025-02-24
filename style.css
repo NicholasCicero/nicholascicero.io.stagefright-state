@@ -1,6 +1,15 @@
 @import url(https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
 
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 :root {
     --off-white-color: #fff5ee;
     --accent-color-1: #151515;
@@ -74,23 +83,27 @@ section {
 /* Typography */
 h1 {
     font: 500 54px/1.5 'Josefin Sans';
+    animation: fade-in 2s;
 }
 
 h2 {
     font: 500 42px/1.5 "Josefin Sans";
     text-align: center;
+    animation: fade-in 2s;
 }
 
 p {
     font: 300 18px/26px "Noto Sans";
     padding: 5px;
     text-align: center;
+    animation: fade-in 2s;
 }
 
 a {
     font: 300 18px/26px "Noto Sans";
     text-decoration: none;
     color: var(--off-white-color);
+    animation: fade-in 2s;
 }
 
 button {
@@ -103,6 +116,7 @@ button {
     color: var(--off-white-color);
     font-size: 16px;
     cursor: pointer;
+    animation: fade-in 2s;
 }
 
 button:hover {
@@ -112,6 +126,7 @@ button:hover {
 /* media */
 img {
     display: inherit;
+    animation: fade-in 2s;
 }
 
 /* Classes */
@@ -235,6 +250,7 @@ img {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
+    animation: fade-in 2s;
 }
 
 .form-container {
@@ -281,3 +297,37 @@ textarea {
         padding: 6px;
     }
 }
+
+.products-page {
+    max-width: 1250px;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+    margin: auto;
+}
+
+.product-card {
+    width: 250px;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 20px;
+    animation: fade-in 2s;
+}
+
+.product-card h3 {
+    font: 300 20px/26px "Josefin Sans";
+}
+
+.product-description {
+    color: var(--accent-color-2);
+    padding: 16px;
+    font: 500 24px/30px "Josefin Sans";
+}
+
+.product-image {
+    display: flex;
+    height: 200px;
+}
+
