@@ -84,7 +84,9 @@ section {
 /* Typography */
 h1 {
     font: 500 54px/1.5 'Josefin Sans';
+    text-align: center;
     animation: fade-in 2s;
+    color: var(--accent-color-1);
 }
 
 h2 {
@@ -482,11 +484,19 @@ footer img {
     padding: 2rem 3rem 2rem 3rem;
 }
 
+.about-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.about-link:hover {
+    color: darkblue;
+    text-decoration: underline;
+}
+
 .contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30vh;
+    height: 40vh;
+    padding: 6rem;
 }
 
 .gallery {
@@ -498,6 +508,7 @@ footer img {
     border-radius: 10px;
     margin: 2rem 5rem;
 }
+
 .gallery img {
     width: 420px;
     height: 290px;
@@ -505,6 +516,11 @@ footer img {
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
 }
+
 .gallery img:hover {
     transform: scale(1.1);
+}
+
+.about-description {
+    text-align: left;
 }
