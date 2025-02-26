@@ -217,7 +217,16 @@ img {
 
 
 .band-info {
-    background-color: #8cb369;
+    background-color: var(--accent-color-1);
+    color: var(--off-white-color);
+    height: 50vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.band-info-alt {
+    background-color: var(--primary-color-2);
     color: var(--off-white-color);
     height: 50vh;
     padding: 5rem;
