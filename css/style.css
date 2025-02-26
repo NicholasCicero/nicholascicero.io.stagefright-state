@@ -15,8 +15,7 @@
     --accent-color-1: #151515;
     --accent-color-2: #303030;
     --primary-color-1: #a24857;
-    --primary-color-2: #2e5a88;
-    --orange: #ffb469;
+    --primary-color-2: #3e78b2;
     --pink: #ff69b4;
     --off-pink: #bf4b89;
 }
@@ -182,7 +181,7 @@ img {
 
 .hero {
     background-color: var(--primary-color-2);
-    height: 130vh;
+    height: 120vh;
 }
 
 .hero-content {
@@ -196,7 +195,7 @@ img {
 .hero-header {
     color: var(--off-white-color);
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 .hero-subtitle {
@@ -204,22 +203,24 @@ img {
     text-align: center;
     font: 500 28px/14px "Noto Sans";
     padding: 2rem;
-    transform: translateY(5rem);
+    transform: translateY(3rem);
 }
 
 .store {
     height: 90vh;
+    justify-content: center;
 }
 
 .store h2 {
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 
+
 .band-info {
-    background-color: var(--accent-color-2);
+    background-color: #8cb369;
     color: var(--off-white-color);
-    height: 60vh;
-    padding: 6rem;
+    height: 50vh;
+    padding: 5rem;
     display: flex;
     justify-content: center;
 }
@@ -237,10 +238,6 @@ img {
     padding: 8px;
     margin: 20px;
     border-radius: 8px;
-}
-
-.link-button:hover {
-    background: var(--off-pink) ;
 }
 
 .contact-links {
@@ -345,7 +342,7 @@ textarea {
 }
 
 .store-header {
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 /* Tour Dates Section */
@@ -495,8 +492,13 @@ footer img {
 }
 
 .contact {
-    height: 40vh;
+    background-color: var(--accent-color-1);
+    height: 50vh;
     padding: 6rem;
+}
+
+.contact h2 {
+    color: var(--off-white-color);
 }
 
 .gallery {
