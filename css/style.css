@@ -249,6 +249,10 @@ img {
     border-radius: 8px;
 }
 
+.link-button {
+    background: var(--off-pink);
+}
+
 .contact-links {
     display: flex;
     justify-content: center;
