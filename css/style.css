@@ -249,7 +249,7 @@ img {
     border-radius: 8px;
 }
 
-.link-button {
+.link-button:hover {
     background: var(--off-pink);
 }
 
