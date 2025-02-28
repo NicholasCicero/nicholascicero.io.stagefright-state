@@ -13,7 +13,7 @@ const createTShirt = (title, price) => {
     product.innerHTML = `
     <div class="product-card">
         <div class="product-image">
-            <img src="img/Stagefright-T-Shirt-Front.jpg" alt="product image here">
+            <img src="img/Stagefright-T-Shirt-Front.jpg" alt="Stagefright T-Shirt Jacket">
         </div>
         <div class="product-description">
             <div class="product-name">
@@ -35,7 +35,7 @@ const createHoodie = (title, price) => {
     product.innerHTML = `
     <div class="product-card">
         <div class="product-image">
-            <img src="img/Stagefright-Hoodie-Front.jpg" alt="product image here">
+            <img src="img/Stagefright-Hoodie-Front.jpg" alt="Stagefright Hoodie Jacket">
         </div>
         <div class="product-description">
             <div class="product-name">
@@ -57,7 +57,7 @@ const createJacket = (title, price) => {
     product.innerHTML = `
     <div class="product-card">
         <div class="product-image">
-            <img src="img/Stagefright-Jacket-Front.jpg" alt="product image here">
+            <img src="img/Stagefright-Jacket-Front.jpg" alt="Stagefright Jacket Product">
         </div>
         <div class="product-description">
             <div class="product-name">
